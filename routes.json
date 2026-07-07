@@ -1,0 +1,12 @@
+[
+  {
+    "id": "snelsmore-common",
+    "name": "Snelsmore Common Loop",
+    "gpx": "data/routes/snelsmore-common.gpx",
+    "distanceKm": 4.2,
+    "ascentM": 45,
+    "terrain": "Heath & woodland",
+    "gridRef": "SU 460 715",
+    "notes": "An easy loop through heathland and birch woodland, good for spotting Dartford warblers in spring."
+  }
+]

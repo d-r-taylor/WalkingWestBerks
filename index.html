@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walking West Berks — local trails, mapped</title>
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-gpx@1.7.0/gpx.js"></script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <svg class="contour-field" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+      <path class="contour" d="M-20,120 C 200,60 350,180 550,110 S 900,40 1220,130" />
+      <path class="contour" d="M-20,190 C 220,140 380,240 560,180 S 880,110 1220,200" />
+      <path class="contour" d="M-20,260 C 240,220 400,300 570,250 S 860,180 1220,270" />
+      <path class="contour" d="M-20,330 C 260,300 420,360 580,320 S 840,260 1220,340" />
+    </svg>
+    <div class="hero-inner">
+      <p class="eyebrow">North Wessex Downs &amp; the Kennet Valley</p>
+      <h1>Walking&nbsp;West&nbsp;Berks</h1>
+      <p class="tagline">Chalk downland, birch heath, and river paths — traced, timed, and ready to follow.</p>
+      <div class="grid-ref">SU&nbsp;460&nbsp;715</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="map-section">
+      <div id="map"></div>
+    </section>
+
+    <section class="routes-section">
+      <h2>Routes</h2>
+      <p class="section-lede">Every track below is walked, recorded, and dropped straight onto the map above — pick one from the list to bring it into view.</p>
+      <div id="route-list" class="route-list">
+        <!-- populated by js/main.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Map data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors. Routes recorded on foot.</p>
+  </footer>
+
+  <script src="js/map.js"></script>
+  <script src="js/gpx-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
