@@ -1,12 +1,12 @@
 [
   {
-    "id": "snelsmore-common",
-    "name": "Snelsmore Common Loop",
-    "gpx": "data/routes/snelsmore-common.gpx",
-    "distanceKm": 4.2,
-    "ascentM": 45,
-    "terrain": "Heath & woodland",
-    "gridRef": "SU 460 715",
-    "notes": "An easy loop through heathland and birch woodland, good for spotting Dartford warblers in spring."
+    "id": "ShawDonningtonSnellsmoreCircuit",
+    "name": "Shaw, Donnington and Snellsmore Circuit",
+    "gpx": "data/routes/ShawDonningtonSnellsmoreCircuit.gpx",
+    "distanceKm": 12.81,
+    "ascentM": 144,
+    "terrain": "Suburbs, recreation ground, woodland and heath",
+    "gridRef": "SU 464 670",
+    "notes": "My regular weekend walk, taking in the pretty Lambourn River, historic Shaw House and Donnington Castle before looping through the lovely Snellsmore Common."
   }
 ]
