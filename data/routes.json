@@ -5,8 +5,18 @@
     "gpx": "data/routes/ShawDonningtonSnellsmoreCircuit.gpx",
     "distanceKm": 12.81,
     "ascentM": 144,
-    "terrain": "Suburbs, recreation ground, woodland and heath",
+    "terrain": "Suburbs, woodland and heath",
     "gridRef": "SU 464 670",
     "notes": "My regular weekend walk, taking in the pretty Lambourn River, historic Shaw House and Donnington Castle before looping through the lovely Snellsmore Common."
+  },
+  {
+    "id": "InkpenWalburyHillCircuit",
+    "name": "Inkpen and Walbury Hill Circuit",
+    "gpx": "data/routes/InkpenWalburyHillCircuit.gpx",
+    "distanceKm": 11.04,
+    "ascentM": 190,
+    "terrain": "Village, woodland, arable fields in the South Wessex Downs",
+    "gridRef": "SU 383 637",
+    "notes": "Beautiful views across three counties from the highest point in the South East."
   }
 ]
