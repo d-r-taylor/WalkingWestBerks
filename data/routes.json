@@ -18,5 +18,45 @@
     "terrain": "Village, woodland, arable fields in the South Wessex Downs",
     "gridRef": "SU 383 637",
     "notes": "Beautiful views across three counties from the highest point in the South East."
+  },
+  {
+    "id": "CopsesCircuit",
+    "name": "The Copses Circuit",
+    "gpx": "data/routes/CopsesCircuit.gpx",
+    "distanceKm": 7.83,
+    "ascentM": 112,
+    "terrain": "Arable fields, woodland, and cannal towpath.",
+    "gridRef": "SU 481 681",
+    "notes": "A quick stroll in the outskirts of Newbury."
+  },
+  {
+    "id": "EcchinswellLadleHillCircuit",
+    "name": "Ecchinswell and Ladle Hill Circuit",
+    "gpx": "data/routes/EcchinswellLadleHillCircuit.gpx",
+    "distanceKm": 14.09,
+    "ascentM": 223,
+    "terrain": "Village, woodland, arable fields in the South Wessex Downs",
+    "gridRef": "SU 487 584",
+    "notes": "Beautiful views and a well preserved Iron Age hillfort."
+  },
+  {
+    "id": "AshmansworthFaccombeCircuit",
+    "name": "Ashmansworth and Faccombe Circuit",
+    "gpx": "data/routes/AshmansworthFaccombeCircuit.gpx",
+    "distanceKm": 9.63,
+    "ascentM": 206,
+    "terrain": "Village, woodland, arable fields in the South Wessex Downs",
+    "gridRef": "SU 405 587",
+    "notes": "A varied and surprisingly taxing walk in beautiful Hampshire countryside."
+  },
+  {
+    "id": "BeaconHillOldBurghclereCircuit",
+    "name": "Beacon Hill and Old Burghclere Circuit",
+    "gpx": "data/routes/BeaconHillOldBurghclereCircuit.gpx",
+    "distanceKm": 11.85,
+    "ascentM": 231,
+    "terrain": "Village, woodland, arable fields and a disused railway in the South Wessex Downs",
+    "gridRef": "SU 467 591",
+    "notes": "Another stunning view from a well-preserved hillfort, followed by a nice circular walk through Old Burghclere."
   }
 ]

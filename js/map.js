@@ -11,7 +11,7 @@ const map = L.map('map', {
 map.on('focus', () => map.scrollWheelZoom.enable());
 map.on('blur', () => map.scrollWheelZoom.disable());
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://api.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=d5449284f5884fea9a6241c4dc84e9e2', {
   maxZoom: 18,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, GPX files &copy; <a href="https://www.komoot.com">komoot</a>'
 }).addTo(map);
