@@ -2,11 +2,13 @@
 // returns the layer so calling code can zoom to it, remove it, etc.
 
 const loadedTracks = {}; // routeId -> Leaflet GPX layer
+const elevationCache = {} // routeId -> [[distanceKm, elevationM], ...]
 
 function loadRoute(route, { fitBounds = false } = {}) {
-  // Already loaded? just reuse it.
+  // Already loaded? just reuse it, including its elevation data.
   if (loadedTracks[route.id]) {
     if (fitBounds) map.fitBounds(loadedTracks[route.id].getBounds());
+    if (elevationCache[route.id]) updateElevationChart(route, elevationCache[route.id]);
     return loadedTracks[route.id];
   }
 
@@ -26,6 +28,11 @@ function loadRoute(route, { fitBounds = false } = {}) {
 
   track.on('loaded', (e) => {
     if (fitBounds) map.fitBounds(e.target.getBounds());
+
+    // leaflet-gpx parses this straight out of the GPX <ele> tags for you.
+    const elevationData = e.target.get_elevation_data();
+    elevationCache[route.id] = elevationData;
+    updateElevationChart(route, elevationData);
   });
 
   track.addTo(map);

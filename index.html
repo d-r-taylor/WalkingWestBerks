@@ -10,6 +10,9 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet-gpx@1.7.0/gpx.js"></script>
 
+<!-- Chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -45,6 +48,16 @@
         <!-- populated by js/main.js -->
       </div>
     </section>
+
+    <section class="elevation-section">
+      <h2 id="elevation-title">Elevation</h2>
+      <p class="section-lede">The elevation profile for the selected route.</p>
+      <div class="elevation-card">
+        <div class="elevation-chart-wrap">
+          <canvas id="elevation-chart"></canvas>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -52,6 +65,7 @@
   </footer>
 
   <script src="js/map.js"></script>
+  <script src="js/elevation-chart.js"></script>
   <script src="js/gpx-loader.js"></script>
   <script src="js/main.js"></script>
 </body>
