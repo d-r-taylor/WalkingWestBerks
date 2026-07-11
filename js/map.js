@@ -11,7 +11,25 @@ const map = L.map('map', {
 map.on('focus', () => map.scrollWheelZoom.enable());
 map.on('blur', () => map.scrollWheelZoom.disable());
 
-L.tileLayer('https://api.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=d5449284f5884fea9a6241c4dc84e9e2', {
+const thunderforestApiKey = 'd5449284f5884fea9a6241c4dc84e9e2';
+const thunderforestLayer = L.tileLayer(`https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=${thunderforestApiKey}`, {
   maxZoom: 18,
   attribution: 'Maps &copy; <a href="https://www.thunderforest.com">Thunderforest</a>, Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, GPX files &copy; <a href="https://www.komoot.com">komoot</a>'
-}).addTo(map);
+});
+
+const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  subdomains: ['a', 'b', 'c'],
+  attribution: 'Maps &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, GPX files &copy; <a href="https://www.komoot.com">komoot</a>'
+});
+
+let fallbackApplied = false;
+thunderforestLayer.on('tileerror', () => {
+  if (!fallbackApplied) {
+    fallbackApplied = true;
+    map.removeLayer(thunderforestLayer);
+    osmLayer.addTo(map);
+  }
+});
+
+thunderforestLayer.addTo(map);

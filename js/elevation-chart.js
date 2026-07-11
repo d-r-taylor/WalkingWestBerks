@@ -44,7 +44,7 @@ function updateElevationChart(route, elevationData) {
                 y: { title: { display: true, text: 'Elevation (m)' } }
             },
             plugins: {
-                legend: { display = false },
+                legend: { display: false },
                 tooltip: {
                     callbacks: {
                         title: (items) => `${items[0].label} km`,

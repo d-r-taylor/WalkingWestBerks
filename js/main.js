@@ -23,7 +23,8 @@ async function init() {
     `;
 
     const showOnMap = () => {
-      loadRoute(route, { fitBounds: true });
+      const hideOthers = document.getElementById('hide-others-toggle').checked;
+      loadRoute(route, { fitBounds: true, hideOthers });
       document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
 
