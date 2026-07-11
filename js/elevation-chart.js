@@ -14,6 +14,9 @@ function updateElevationChart(route, elevationData) {
     const titleEl = document.getElementById('elevation-title');
     if (titleEl) titleEl.textContent = `Elevation - ${route.name}`;
 
+    const gridRefEl = document.getElementById('hero-grid-ref');
+    if (gridRefEl) gridRefEl.textContent = route.gridRef; 
+
     if (elevationChart) {
         elevationChart.data.labels = labels;
         elevationChart.data.datasets[0].data = elevations;
